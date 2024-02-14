@@ -1,0 +1,13 @@
+send_anonymous_usage_stats: false
+keboola_northwind:
+    target: keboola_northwind
+    outputs:
+        keboola_northwind:
+            account: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_ACCOUNT") }}'
+            database: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_DATABASE") }}'
+            password: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_PASSWORD") }}'
+            schema: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_SCHEMA") }}'
+            type: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_TYPE") }}'
+            user: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_USER") }}'
+            warehouse: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_WAREHOUSE") }}'
+            threads: 4
