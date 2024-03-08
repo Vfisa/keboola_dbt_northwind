@@ -1,3 +1,5 @@
+{{ config(group = 'analytics') }}
+
 with source as (
     select
         s."ORDER_ID"

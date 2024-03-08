@@ -2,6 +2,8 @@ version: 2
 
 models:
     - name: dim_customer
+      config:
+        group: mart
       tags:
         - marts
       docs:
@@ -41,6 +43,8 @@ models:
             description: Updated at
 
     - name: dim_employee
+      config:
+        group: mart
       description: "Dimensional model with employee details"
       tags:
         - marts
@@ -90,6 +94,8 @@ models:
             description: Updated at
 
     - name: dim_product
+      config:
+        group: mart
       description: "Dimensional model with product details"
       tags:
         - marts
@@ -125,6 +131,8 @@ models:
             description: Updated at
 
     - name: fact_sales
+      config:
+        group: finance
       description: "Fact table with sales data"
       tags:
         - marts
