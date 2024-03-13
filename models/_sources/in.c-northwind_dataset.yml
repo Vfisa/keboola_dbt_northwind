@@ -57,9 +57,11 @@ sources:
           columns:
             - name: '"EMPLOYEE_ID"'
               tests:
+                - unique
                 - not_null
             - name: '"TERRITORY_ID"'
               tests:
+                - unique
                 - not_null
         - name: ORDERS
           quoting:
